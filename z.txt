@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <!-- System Boundary -->
+  <rect x="300" y="50" width="600" height="600" fill="#f0f0f0" stroke="#000" stroke-width="2"/>
+  <text x="600" y="30" text-anchor="middle" font-size="18" font-weight="bold">Shipment Tracking System</text>
+
+  <!-- Actors -->
+  <g>
+    <!-- Customer Actor -->
+    <circle cx="950" cy="350" r="40" fill="#4CAF50" stroke="#000"/>
+    <text x="950" y="410" text-anchor="middle" font-size="14">Customer</text>
+
+    <!-- Admin Actor -->
+    <circle cx="150" cy="100" r="40" fill="#2196F3" stroke="#000"/>
+    <text x="150" y="160" text-anchor="middle" font-size="14">Admin</text>
+
+    <!-- Delivery Guy Actor -->
+    <circle cx="150" cy="300" r="40" fill="#FF9800" stroke="#000"/>
+    <text x="150" y="360" text-anchor="middle" font-size="14">Delivery Guy</text>
+
+    <!-- Warehouse Actor -->
+    <circle cx="150" cy="500" r="40" fill="#9C27B0" stroke="#000"/>
+    <text x="150" y="560" text-anchor="middle" font-size="14">Warehouse</text>
+  </g>
+
+  <!-- Customer Use Cases -->
+  <g>
+    <ellipse cx="600" cy="100" rx="150" ry="30" fill="#E0E0E0" stroke="#000"/>
+    <text x="600" y="105" text-anchor="middle" font-size="12">Search Shipment</text>
+    
+    <ellipse cx="600" cy="150" rx="150" ry="30" fill="#E0E0E0" stroke="#000"/>
+    <text x="600" y="155" text-anchor="middle" font-size="12">Track Shipment</text>
+    
+    <ellipse cx="600" cy="200" rx="150" ry="30" fill="#E0E0E0" stroke="#000"/>
+    <text x="600" y="205" text-anchor="middle" font-size="12">View Shipment Status</text>
+    
+    <ellipse cx="600" cy="250" rx="150" ry="30" fill="#E0E0E0" stroke="#000"/>
+    <text x="600" y="255" text-anchor="middle" font-size="12">Subscribe to Updates</text>
+    
+    <ellipse cx="600" cy="300" rx="150" ry="30" fill="#E0E0E0" stroke="#000"/>
+    <text x="600" y="305" text-anchor="middle" font-size="12">Account Management</text>
+  </g>
+
+  <!-- Admin Use Cases -->
+  <g>
+    <ellipse cx="600" cy="400" rx="150" ry="30" fill="#E0E0E0" stroke="#000"/>
+    <text x="600" y="405" text-anchor="middle" font-size="12">Update Shipment Info</text>
+    
+    <ellipse cx="600" cy="450" rx="150" ry="30" fill="#E0E0E0" stroke="#000"/>
+    <text x="600" y="455" text-anchor="middle" font-size="12">System Monitoring</text>
+    
+    <ellipse cx="600" cy="500" rx="150" ry="30" fill="#E0E0E0" stroke="#000"/>
+    <text x="600" y="505" text-anchor="middle" font-size="12">User Account Management</text>
+  </g>
+
+  <!-- Delivery Guy Use Cases -->
+  <g>
+    <ellipse cx="600" cy="550" rx="150" ry="30" fill="#E0E0E0" stroke="#000"/>
+    <text x="600" y="555" text-anchor="middle" font-size="12">View Delivery Schedule</text>
+    
+    <ellipse cx="600" cy="600" rx="150" ry="30" fill="#E0E0E0" stroke="#000"/>
+    <text x="600" y="605" text-anchor="middle" font-size="12">Update Delivery Status</text>
+    
+    <ellipse cx="600" cy="650" rx="150" ry="30" fill="#E0E0E0" stroke="#000"/>
+    <text x="600" y="655" text-anchor="middle" font-size="12">Report Delivery Issues</text>
+  </g>
+
+  <!-- Connections -->
+  <g>
+    <!-- Customer to Use Cases -->
+    <line x1="910" y1="350" x2="750" y2="100" stroke="#000" stroke-dasharray="5,5"/>
+    <line x1="910" y1="350" x2="750" y2="150" stroke="#000" stroke-dasharray="5,5"/>
+    <line x1="910" y1="350" x2="750" y2="200" stroke="#000" stroke-dasharray="5,5"/>
+    <line x1="910" y1="350" x2="750" y2="250" stroke="#000" stroke-dasharray="5,5"/>
+    <line x1="910" y1="350" x2="750" y2="300" stroke="#000" stroke-dasharray="5,5"/>
+
+    <!-- Admin to Use Cases -->
+    <line x1="190" y1="100" x2="450" y2="400" stroke="#000" stroke-dasharray="5,5"/>
+    <line x1="190" y1="100" x2="450" y2="450" stroke="#000" stroke-dasharray="5,5"/>
+    <line x1="190" y1="100" x2="450" y2="500" stroke="#000" stroke-dasharray="5,5"/>
+
+    <!-- Delivery Guy to Use Cases -->
+    <line x1="190" y1="300" x2="450" y2="550" stroke="#000" stroke-dasharray="5,5"/>
+    <line x1="190" y1="300" x2="450" y2="600" stroke="#000" stroke-dasharray="5,5"/>
+    <line x1="190" y1="300" x2="450" y2="650" stroke="#000" stroke-dasharray="5,5"/>
+
+    <!-- Warehouse to Account Management -->
+    <line x1="190" y1="500" x2="450" y2="500" stroke="#000" stroke-dasharray="5,5"/>
+  </g>
+</svg>
